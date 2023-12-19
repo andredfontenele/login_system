@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <% if (user) { %>
+    <h1>Bem-vindo, <%= user.username %>!</h1>
+    <a href="/logout">Sair</a>
+  <% } else { %>
+    <h1>Bem-vindo</h1>
+    <a href="/login">Login</a>
+  <% } %>
+</body>
+</html>
